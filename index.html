@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 shadow-md z-50">
+      <div class="h-16 px-10 flex justify-between items-center">
+        <h1 class="text-xl font-semibold">mealapp</h1>
+
+        <ul class="flex gap-5">
+          <li class="hover:cursor-pointer hover:text-gray-400 duration-200"><a href="index.html">Home</a></li>
+          <li class="hover:cursor-pointer hover:text-gray-400 duration-200"><a href="index.html">Foods</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="w-full my-10 flex justify-center">
+      <div class="inline-block">
+        <h2 class="font-semibold text-xl text-center">Choose Category</h2>
+
+        <div id="categories" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+          <!-- Menampilkan data dari API -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="bg-white h-16 px-10 flex justify-center items-center">
+        <p>&copy; 2024 mealapp</p>
+      </div>
+    </footer>
+
+    <!-- Javascript Source -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/getMeals.js"></script>
+  </body>
+</html>
