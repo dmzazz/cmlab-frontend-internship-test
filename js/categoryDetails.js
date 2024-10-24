@@ -35,11 +35,6 @@ async function getMealsByCategory() {
             `;
       mealsContainer.appendChild(mealElement);
     });
-
-    // redirect ke halaman baru
-    categoryElement.addEventListener("click", () => {
-      window.location.href = `mealsDetail.html?category=${category.strMeal}`;
-    });
   } catch (error) {
     console.error(error);
   }
